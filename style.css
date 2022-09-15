@@ -26,6 +26,7 @@
 
 body{
 	margin: 0px auto;
+	font-family: "Arial";
 
 }
 #top-bar{
@@ -47,7 +48,8 @@ body{
     padding-right: 7rem;
 }
 .fence-crm__container{
-	width: 1180px;
+	width: 100%;
+	max-width: 1180px;
 	margin: auto;
 }
 #nav-bar{
@@ -196,13 +198,13 @@ background-size: cover;
 .fencecrm-gallery__carousel {
     padding: 35px 20px;
 }
-#fencecrm-card h2{
+ h2.heading{
 	font-family: var(--bold-faimily);
 	font-size: 42px;
 	color: #5d5d5d;
 	letter-spacing: 2px;
 }
-#fencecrm-card p{
+ p.heading{
 	font-family: var(--main-faimily);
 	font-size: 24px;
 	letter-spacing: 1px;
@@ -244,7 +246,228 @@ background-size: cover;
 }
 #testimonial{
 	background-image: url(mokeup/FenceCRM/img/testimonial_bg_img.jpg);
+	background-size: cover;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
-.fence-crm__testimonial{
-	padding: 100px;
+.testimonial-box{
+	width: 100%;
+	margin: 0px auto;
+}
+.fence-crm__testimonial {
+    padding: 20px 100px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px #5d5d5d;
+        width: 95%;
+    margin: auto;
+}
+.fence-crm__testimonial .card-img-top {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: -20%;
+    border-radius: 50px;
+    transform: translate(-50px, 0px);
+}
+.testimonial-box__inner{
+	padding: 100px 0px 50px;
+}
+
+#testimonial h5 {
+    font-family: var(--bold-faimily);
+    font-size: 20px;
+    color: var(--primary-color);
+}
+#testimonial h3{
+	font-family: var(--bold-faimily);
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #5d5d5d;
+}
+#testimonial p {
+    font-family: 'Arial';
+    font-size: 16px;
+    color: #5d5d5d;
+}
+#testimonial .ikon-card{
+	font-size: 30px;
+	color: var(--primary-color);
+	    display: inline-block;
+    margin: 15px auto;
+}
+.testimonial-box__inner h5{
+	font-size: 16px;
+	font-family: var(--bold-faimily);
+	color: #5d5d5d;
+}
+
+.testimonial-box__inner p{
+	color: #5d5d5d;
+	font-size: 14px;
+	font-family: 'Arial';
+}
+.testimonial-box__inner .card{
+	border: none;
+	box-shadow: 3px 3px 10px #ededed;
+}
+#testimonial .testimonial-box__inner h5.card-title{
+	font-family: var(--bold-faimily);
+	font-size: 20px;
+	color: #5d5d5d;
+}
+.testimonial-box__inner p {
+	margin-bottom: 0px;
+	line-height: 17px;
+}
+#fencecrm-ikons-area{
+ background-color: #f9f9f9;
+}
+   
+.ikon-box {
+    width: 100%;
+    max-width: 200PX;
+    background-color: white;
+    margin: 10px auto;
+    padding: 15px;
+}
+.ikon-box img{
+	width: 100px;
+	object-fit: contain;
+}
+.ikon-box p{
+	font-family: 'Arial';
+	font-size: var(--primary-text-size);
+}
+#fencecrm-faq{
+	padding-top: 50px;
+
+	padding-bottom: 50px;
+}
+#fencecrm-ikons-area{
+	padding: 50px 0px;
+}
+.faq{
+  padding: 20px 100px;
+}
+.faq .accordion-item{
+	border: none;
+	margin: 2px auto;
+  background-color: #f5f5f5;
+}
+.accordion-button.collapsed{
+	box-shadow: 0px 5px 5px #f5f5f5;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--primary-color);
+    font-family: var(--bold-faimily);
+    background-color: transparent;
+    box-shadow: none;
+}
+.accordion-button.collapsed{
+	font-family: 'Arial';
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffb63f'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+#are-you-ready{
+	background-color: var(--primary-color);
+	
+	box-sizing: border-box;
+
+}
+#are-you-ready .fence-crm__input-area{
+	border-color: white;
+	width: 100%;
+	margin: auto;
+	max-width: 640px;
+}
+
+#are-you-ready .fence-crm__input-area input{
+	font-size: 30px;
+	color: #e8e8e8;
+	width: 70%;
+}
+#are-you-ready .fence-crm__input-area button{
+	background-color: white;
+	color: var(--primary-color);
+}
+#are-you-ready .fence-crm__input-area input::-webkit-input-placeholder {
+  color: #e8e8e8;
+	font-size: 30px}
+
+#are-you-ready .fence-crm__input-area input:-ms-input-placeholder {
+ color: #e8e8e8;
+	font-size: 30px}
+
+#are-you-ready .fence-crm__input-area input:-moz-placeholder {
+  color: #e8e8e8;
+	font-size: 30px}
+
+#are-you-ready .fence-crm__input-area input::-moz-placeholder {
+ color: #e8e8e8;
+	font-size: 30px;}
+
+	#are-you-ready .fencecrm-banner__heading{
+    padding-top: ;
+		padding-bottom: 30px;
+   font-family: var(--bold-faimily);
+   letter-spacing: 1px;
+	}
+
+
+
+	/*footer css*/
+
+footer{
+     background-color: #333333;
+     padding:70px 0px;
+}	       
+
+footer ul li{
+    padding:5px 0px;
+}
+
+.contact span , .social span{
+   color: var(--primary-color); 
+   font-family: var(--bold-faimily);
+   font-size: 30px;
+   margin-top: 40px;
+   display: inline-block;
+}
+ 
+.adress li p , .contact li a , .social li a{
+  color: white;
+	font-family: 'Arial';
+	font-size: 22px;
+}
+ul.social{
+	padding-left: 0px;
+	margin:  40px 0px;
+
+}
+
+.social li{
+    float:left;
+}
+.social li i{
+	font-size: 24px;
+	background-color: whitesmoke;
+	color: #333333;
+	margin-right: 10px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.adress , .contact , .social {
+    list-style: none;
+}
+
+.footer-text {
+	color: white;
+	font-family: var(--bold-faimily);
+	font-size: 22px;
+}
+.footer-text a{
+	border-bottom: 4px solid var(--primary-color);
 }
