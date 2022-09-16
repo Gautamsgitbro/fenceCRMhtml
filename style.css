@@ -1,3 +1,4 @@
+
 @font-face{
 	font-family: myriad-regular;
 	src: url(assets/myriad/MYRIADPRO-REGULAR.OTF);
@@ -29,23 +30,33 @@ body{
 	font-family: "Arial";
 
 }
+a:hover{
+	color: var(--primary-color) !important;
+}
 #top-bar{
 	width: 100%;
 	background-color:#241f20;
 	height: 50px;
+}
+.top-bar__inner{
+	height: 50px;
+	padding-top: 4px;
+}
+.top-bar__inner .nav{
+	padding-right: 0px;
 }
 .top-bar__link{
 	font-size: var(--primary-text-size);
     font-family: "ArialMT" sans-serif;
     color:white;
 }
-.fence-crm__font-style{
+
+.nav-link .fence-crm__font-style{
 	font-size: var(--primary-text-size);
-    font-family: "ArialMT" sans-serif !important;
     color: #5d5d5d !important;
-    font-style: bold;
-    padding-left: 7rem;
-    padding-right: 7rem;
+    letter-spacing: 0.7px;
+    padding-left: 0.7rem;
+    padding-left: 0.7rem;  
 }
 .fence-crm__container{
 	width: 100%;
@@ -60,6 +71,9 @@ img.fence-crm__main-logo{
  width: 293px;
  height: 76px;
 }
+
+
+
 #nav-bar .nav-link{
 	font-size: var(--primary-text-size);
 }
@@ -67,19 +81,23 @@ img.fence-crm__main-logo{
 	border: 3px solid var(--primary-color);
 	font-family:"ArialMT" sans-serif;
 	color: #5d5d5d;
+	padding-top: 0.7rem !important;
+	padding-bottom: 0.7rem !important;
 }
 .ikon{
 	color: var(--primary-color);
 }
 .ikon-nav-link{
 	font-size: 12px;
+	display: inline-block;
+	margin-left: 5px;
 }
 #fencecrm-banner{
 	background-image: url("mokeup/FenceCRM/img/banner_bg_img_opecity.jpg");
 background-size: cover;
 }
 .fencecrm-banner__heading{
-	padding: 75px 0px;
+	padding: 60px 0px 43px;
 	font-size: 60px;
 	color: white;
 	font-family: var(--bold-faimily);
@@ -114,7 +132,8 @@ background-size: cover;
 	text-decoration: none;
 }
 .fencecrm-banner__tab-panel{
-	padding: 0px 30px;
+    padding: 0px 30px 0px 55px;
+
 }
 .fence-crm__tab{
 	font-size: 26px;
@@ -145,14 +164,16 @@ background-size: cover;
 	border: 3px solid var(--primary-color);
 	display: flex;
 	justify-content: space-between;
-	margin-top: 45px;
+	margin-top: 30px;
+	width: 100%;
+    max-width: 360px;
 
 }
 
 .fence-crm__input-area input{
 	background-color: transparent;
 	border: none;
-	width: 220px;
+	width: 165px;
 	margin-left: 20px;	
 }
 .fence-crm__input-area input::-webkit-input-placeholder {
@@ -196,19 +217,20 @@ background-size: cover;
   object-fit: contain;
 }
 .fencecrm-gallery__carousel {
-    padding: 35px 20px;
+    padding: 50px 20px;
 }
  h2.heading{
 	font-family: var(--bold-faimily);
 	font-size: 42px;
 	color: #5d5d5d;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 }
  p.heading{
 	font-family: var(--main-faimily);
 	font-size: 24px;
-	letter-spacing: 1px;
+	letter-spacing: 0.5px;
 	color: #5d5d5d;
+	padding: 20px 0px;
 }
 #fencecrm-card h5{
 	font-family: var(--bold-faimily);
@@ -217,13 +239,16 @@ background-size: cover;
 	color: #010101;
 }
 .fencecrm-card__inner{
+	margin-top: 40px;
 	padding: 20px 220px;
 }
 .fencecrm-card__boxes .card{
-	margin: auto;
+
 	padding: 65px 20px;
 	border: 1px solid #e9e9e5;
 	border-bottom: 10px solid #85632e;
+	margin: 0px 10px;
+	border: 2px solid #e9e9e5;
 }
 .fencecrm-card__boxes img.card-img-top {
     width: 80px;
@@ -242,7 +267,7 @@ background-size: cover;
 	font-family: var(--main-faimily);
 	font-size: 20px;
 	letter-spacing: 0px;
-	line-height: 20px;
+	line-height: 25px;
 }
 #testimonial{
 	background-image: url(mokeup/FenceCRM/img/testimonial_bg_img.jpg);
@@ -470,4 +495,45 @@ ul.social{
 }
 .footer-text a{
 	border-bottom: 4px solid var(--primary-color);
+}
+#footer-bottom li{
+	list-style: none;
+}
+ul.footer-menu{
+	margin-bottom: 0px;
+}
+.footer-menu li a{
+	color: #5d5d5d;
+	font-family: "Arial";
+	font-size: 16px;
+	text-decoration: none;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+.fencecrm-banner__tab-panel .nav-item a{
+	letter-spacing: 1px;
+  
+}
+.fence-crm-banner__form-area{
+    padding: 0px 30px;
+}
+
+#fencecrm-banner .col-md-7{
+	padding: 0px;
+}
+.banner-area__message 
+{
+	padding: 20px 40px 50px;
+}
+.banner-area__message .fa{
+ color: #04bf0d;
+ font-size: 24px;
+}
+.banner-area__message span{
+	font-family: "Arial";
+	font-size: 22px;
+	color: white;
+}
+.fencecrm-card__boxes{
+	margin-top: -30px;
 }
