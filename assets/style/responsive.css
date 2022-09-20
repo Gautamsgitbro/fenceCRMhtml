@@ -1,0 +1,71 @@
+
+@media screen and (min-width: 1180px){
+	.fencecrm-banner__heading {
+     padding: 60px 0px 43px;
+     font-size: 60px;
+ }
+ .fencecrm-card__inner {
+    margin-top: 40px;
+    padding: 20px 220px;
+}
+.testimonial-box p {
+    padding: 0px 140px;
+ }
+ .fencecrm-faq__inner {
+    padding: 0px 140px;
+}
+.fence-crm__tab {
+    font-size: 26px
+}
+.tab-content li a{
+    font-size: 22px;
+}
+.fence-crm__input-area button {
+font-size: 20px;
+}
+h2.heading{
+    font-size: 42px;
+}
+p.heading{
+         font-size: 24px;
+}
+#fencecrm-card h5.card-title{
+        font-size: 24px;
+}
+#fencecrm-card p.card-text{
+        margin-top: 30px;
+}
+#testimonial h3{
+    font-size: 30px;
+}
+#are-you-ready .fence-crm__input-area input{
+        width: 70%;
+}
+#are-you-ready .fence-crm__input-area input::-webkit-input-placeholder {
+ 
+    font-size: 30px
+}
+
+#are-you-ready .fence-crm__input-area input:-ms-input-placeholder {
+     font-size: 30px}
+
+#are-you-ready .fence-crm__input-area input:-moz-placeholder {
+ 
+    font-size: 30px}
+
+#are-you-ready .fence-crm__input-area input::-moz-placeholder {
+ 
+    font-size: 30px;}
+
+}
+
+@media screen and (max-width: 576px){
+    
+     .btn-outline-maincolor{
+        display: none;
+     }
+     section#are-you-ready{
+       padding: 10px;
+     }
+
+}

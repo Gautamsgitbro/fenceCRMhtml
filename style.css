@@ -24,6 +24,15 @@
 ::-webkit-scrollbar-thumb {
   background-color: var(--primary-color);
 }
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: var(--primary-color);
+}
+
+::selection {
+  color: white;
+  background: var(--primary-color);
+}
 
 body{
 	margin: 0px auto;
@@ -97,8 +106,8 @@ img.fence-crm__main-logo{
 background-size: cover;
 }
 .fencecrm-banner__heading{
-	padding: 60px 0px 43px;
-	font-size: 60px;
+	/*padding: 60px 0px 43px;
+	font-size: 60px;*/
 	color: white;
 	font-family: var(--bold-faimily);
 }
@@ -128,7 +137,6 @@ background-size: cover;
 .tab-content li a{
     color: white;
 	font-family: myriad-regular;
-	font-size: 22px;
 	text-decoration: none;
 }
 .fencecrm-banner__tab-panel{
@@ -136,7 +144,6 @@ background-size: cover;
 
 }
 .fence-crm__tab{
-	font-size: 26px;
 	font-family: var(--bold-faimily);
 }
 .fencecrm-banner__tab-panel .nav-tabs{
@@ -201,7 +208,6 @@ background-size: cover;
 	border: none;
 	color: white;
 	box-sizing: border-box;
-	font-size: 20px;
 	font-family: var(--bold-faimily);
 }
 #owl-demo .item{
@@ -221,13 +227,11 @@ background-size: cover;
 }
  h2.heading{
 	font-family: var(--bold-faimily);
-	font-size: 42px;
 	color: #5d5d5d;
 	letter-spacing: 1px;
 }
  p.heading{
 	font-family: var(--main-faimily);
-	font-size: 24px;
 	letter-spacing: 0.5px;
 	color: #5d5d5d;
 	padding: 10px 0px;
@@ -237,10 +241,6 @@ background-size: cover;
 	font-size: 20px;
 	letter-spacing: 1px;
 	color: #010101;
-}
-.fencecrm-card__inner{
-	margin-top: 40px;
-	padding: 20px 220px;
 }
 .fencecrm-card__boxes .card{
 
@@ -259,15 +259,12 @@ background-size: cover;
 }
 #fencecrm-card h5.card-title{
 	font-family: var(--bold-faimily);
-	font-size: 24px;
 	color: #5d5d5d;
 }
 #fencecrm-card p.card-text{
 	font-family: var(--main-faimily);
-	font-size: 20px;
 	letter-spacing: 0px;
 	line-height: 25px;
-	margin-top: 30px;
 	letter-spacing: 1px;
 }
 #testimonial{
@@ -309,7 +306,6 @@ background-size: cover;
 }
 #testimonial h3{
 	font-family: var(--bold-faimily);
-    font-size: 30px;
     letter-spacing: 1px;
     color: #5d5d5d;
 }
@@ -421,9 +417,7 @@ padding-bottom: 30px;
 }
 
 #are-you-ready .fence-crm__input-area input{
-	font-size: 30px;
 	color: #e8e8e8;
-	width: 70%;
 }
 #are-you-ready .fence-crm__input-area button{
 	background-color: white;
@@ -431,19 +425,16 @@ padding-bottom: 30px;
 }
 #are-you-ready .fence-crm__input-area input::-webkit-input-placeholder {
   color: #e8e8e8;
-	font-size: 30px}
+}
 
 #are-you-ready .fence-crm__input-area input:-ms-input-placeholder {
- color: #e8e8e8;
-	font-size: 30px}
+ color: #e8e8e8;}
 
 #are-you-ready .fence-crm__input-area input:-moz-placeholder {
-  color: #e8e8e8;
-	font-size: 30px}
+  color: #e8e8e8;}
 
 #are-you-ready .fence-crm__input-area input::-moz-placeholder {
- color: #e8e8e8;
-	font-size: 30px;}
+ color: #e8e8e8;}
 
 	#are-you-ready .fencecrm-banner__heading{
     padding-top: ;
@@ -560,12 +551,9 @@ ul.footer-menu{
 	margin: auto;
 }
 .testimonial-box p{
-	padding: 0px 140px;
 	margin-top: 15px;
 } .fencecrm-ikon-area__inner{
 	padding: 0px 15px;
-}.fencecrm-faq__inner{
-	padding: 0px 140px;
 }
 .accordion-button {
 	font-size: 18px;
@@ -584,3 +572,33 @@ ul.footer-menu{
 	font-size: 26px;
 	color: white;
 }
+/*@media (max-width: 576px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 50px;
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 75%;
+        height: 100%;
+    }
+
+    .navbar-collapse.collapsing {
+        left: -75%;
+        transition: height 0s ease;
+
+        background-color: var(--primary-color);
+    }
+
+    .navbar-collapse.show {
+        left: 0;
+        transition: left 300ms ease-in-out;
+
+        background-color: var(--primary-color);
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 500ms ease-in-out;
+    }
+}*/
