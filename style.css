@@ -254,9 +254,6 @@ background-size: cover;
     height: 80px;
     margin: auto;
 }
-.fencecrm-card__boxes .col-md-4{
-	margin: 30px auto 30px auto;
-}
 #fencecrm-card h5.card-title{
 	font-family: var(--bold-faimily);
 	color: #5d5d5d;
@@ -296,8 +293,13 @@ background-size: cover;
     transform: translate(-50px, 0px);
 }
 .testimonial-box__inner{
-	padding: 70px 0px 50px;
+	padding: 0px 0px 50px;
 }
+.testimonial-boxes>*{
+	padding-top: 70px;
+}
+
+
 
 #testimonial h5 {
     font-family: var(--bold-faimily);
@@ -602,3 +604,7 @@ ul.footer-menu{
         transition: left 500ms ease-in-out;
     }
 }*/
+
+.card-boxes>*{
+	    margin: 30px auto 30px auto;
+}
