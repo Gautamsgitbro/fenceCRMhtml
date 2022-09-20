@@ -67,5 +67,11 @@ p.heading{
      section#are-you-ready{
        padding: 10px;
      }
+     section#nav-bar{
+        padding: 0px 10px;
+     }
+     section#fencecrm-banner{
+        padding: 20px 0px;
+     }
 
 }

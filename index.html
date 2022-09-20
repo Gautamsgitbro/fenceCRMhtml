@@ -248,7 +248,9 @@
                <div class="col-md-12">
                   <div class="testimonial-box__inner">
                      <div class="row text-center">
-                        <div class="col-md-4">
+                        <div id="owl-testimonial" class="owl-carousel owl-theme">
+                           <div class="item">
+                        <div class="card-outer">
                            <div class="card">
                               <img class="card-img-top" src="mokeup/FenceCRM/icons/fence.png" alt="Card image cap">
                               <br>
@@ -267,7 +269,9 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-md-4">
+                        </div>
+                        <div class="item">
+                        <div class="card-outer">
                            <div class="card">
                               <img class="card-img-top" src="mokeup/FenceCRM/icons/fence.png" alt="Card image cap">
                               <br>
@@ -286,7 +290,9 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-md-4">
+                     </div>
+                     <div class="item">
+                        <div class="card-outer">
                            <div class="card">
                               <img class="card-img-top" src="mokeup/FenceCRM/icons/fence.png" alt="Card image cap">
                               <br>
@@ -305,6 +311,8 @@
                               </div>
                            </div>
                         </div>
+                     </div>
+                     </div>
                      </div>
                   </div>
                </div>
@@ -594,8 +602,18 @@
              itemsDesktopSmall : [979,3]
          
          });
+          $("#owl-testimonial").owlCarousel({
+         
+             autoPlay: 3000, //Set AutoPlay to 3 seconds 
+             items : 3,
+             pagination:false,
+             itemsDesktop : [1199,3],
+             itemsDesktopSmall : [979,3]
          
          });
+         
+         });
+            
       </script>
       <!-- Include js plugin -->
       <script src="assets/carousel/owl-carousel/owl.carousel.js"></script>
